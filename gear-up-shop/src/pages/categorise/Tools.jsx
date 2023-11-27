@@ -1,16 +1,15 @@
 
-// ShopAll.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-function ShopAll() {
+function Tools() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/Products');
+        const response = await axios.get('http://localhost:8000/Tools');
         console.log('Fetched data:', response.data);
         setProducts(response.data);
       } catch (error) {
@@ -112,7 +111,14 @@ function ShopAll() {
   );
 }
 
-export default ShopAll;
+export default Tools;
+
+
+
+
+
+
+
 
 
 

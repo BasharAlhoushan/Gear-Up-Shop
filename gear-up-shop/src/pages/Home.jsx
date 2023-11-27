@@ -1,7 +1,9 @@
 import React from 'react'
 import Herosection from '../componete/Herosection'
 import Categories from '../componete/Categories'
-import AboutUs from '../componete/AboutUs'
+import FeaturedProducts from '../componete/FeaturedProducts'
+import Dashbord from './Dashboard/Dashbord'
+
 
 
 function Home() {
@@ -9,7 +11,10 @@ function Home() {
     <>
     <Herosection/>
     <Categories/>
-    <AboutUs/>
+    <FeaturedProducts/>
+    
+    
+    
     </>
   )
 }

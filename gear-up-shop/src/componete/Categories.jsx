@@ -1,102 +1,118 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Categories() {
   return (
     <div>
-        <>
+      
+      <>
+      
   {/* component */}
-  <div className="flex justify-center items-center">
+  <div className="flex justify-center items-center ">
     {/*- more free and premium Tailwind CSS components at https://tailwinduikit.com/ -*/}
-    <div className="2xl:mx-auto 2xl:container py-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full">
-      <div className="flex flex-col jusitfy-center items-center space-y-10">
+    <div className="2xl:mx-auto 2xl:container py-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full  ">
+      <div className="flex flex-col jusitfy-center items-center space-y-10  ">
         <div className="flex flex-col justify-center items-center ">
           <h1 className="text-3xl xl:text-4xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white">
             Shop By Category
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 md:gap-x-8 w-full">
-          <div className="relative group flex justify-center items-center h-full w-full">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 md:gap-x-8 md:gap-x-8 w-full  ">
+          <div className="relative group flex justify-center items-center h-80 w-full bg-blue-600/30 backdrop-brightness-75 ">
+            <img
+              className="object-center object-cover h-full w-full "
+              src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/645ed1d7dc86fe001d010a5f.jpg"
+              alt="girl-image"
+            />
+            <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white ">
+            
+            <Link to='/clean' >
+            Clean
+            </Link>
+            </button>
+            <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+          </div>
+          <div className="relative group flex justify-center items-center h-80 w-full bg-blue-600/30 backdrop-brightness-75">
             <img
               className="object-center object-cover h-full w-full"
-              src="https://i.ibb.co/ThPFmzv/omid-armin-m-VSb6-PFk-VXw-unsplash-1-1.png"
+              src="https://m.media-amazon.com/images/I/71bCyrGXmUL._AC_UF1000,1000_QL80_.jpg"
               alt="girl-image"
             />
             <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-              Women
+            
+            <Link to='/light' >
+            Light
+            </Link>
             </button>
             <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
           </div>
-          <div className="flex flex-col space-y-4 md:space-y-8 mt-4 md:mt-0">
-            <div className="relative group flex justify-center items-center h-full w-full">
-              <img
-                className="object-center object-cover h-full w-full"
-                src="https://i.ibb.co/SXZvYHs/irene-kredenets-DDqx-X0-7v-KE-unsplash-1.png"
-                alt="shoe-image"
-              />
-              <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                Shoes
-              </button>
-              <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
-            </div>
-            <div className="relative group flex justify-center items-center h-full w-full">
-              <img
-                className="object-center object-cover h-full w-full"
-                src="https://i.ibb.co/Hd1pVxW/louis-mornaud-Ju-6-TPKXd-Bs-unsplash-1-2.png"
-                alt="watch-image"
-              />
-              <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-                Watches
-              </button>
-              <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
-            </div>
-          </div>
-          <div className="relative group justify-center items-center h-full w-full hidden lg:flex">
+          <div className="relative group flex justify-center items-center h-80 w-full bg-blue-600/30 backdrop-brightness-75">
             <img
               className="object-center object-cover h-full w-full"
-              src="https://i.ibb.co/PTtRBLL/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png"
+              src="https://aschilo.com/wp-content/uploads/tool-equip.jpg"
               alt="girl-image"
             />
             <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-              Accessories
+              <Link to='/tools' >
+              Tools
+            </Link>
             </button>
             <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
           </div>
-          <div className="relative group flex justify-center items-center h-full w-full mt-4 md:hidden md:mt-8 lg:hidden">
+          
+          <div className="relative group flex justify-center items-center h-80 w-full bg-blue-600/30 backdrop-brightness-75 my-6">
             <img
-              className="object-center object-cover h-full w-full hidden md:block"
-              src="https://i.ibb.co/6FjW19n/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2.png"
+              className="object-center object-cover h-full w-full"
+              src="https://d3lp4xedbqa8a5.cloudfront.net/imagegen/max/ccr/1023/-/s3/digital-cougar-assets/whichcar/2017/02/10/9240/Mobile-phone-holder-in-air-vent-in-car.jpg"
               alt="girl-image"
             />
-            <img
-              className="object-center object-cover h-full w-full md:hidden"
-              src="https://i.ibb.co/sQgHwHn/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png"
-              alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2"
-            />
             <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
-              Accessories
+            <Link to='/mobile' >
+            Mobile
+            </Link>
             </button>
             <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
           </div>
-        </div>
-        <div className="relative group hidden md:flex justify-center items-center h-full w-full mt-4 md:mt-8 lg:hidden">
-          <img
-            className="object-center object-cover h-full w-full hidden md:block"
-            src="https://i.ibb.co/6FjW19n/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2.png"
-            alt="girl-image"
-          />
-          <img
-            className="object-center object-cover h-full w-full sm:hidden"
-            src="https://i.ibb.co/sQgHwHn/olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-1.png"
-            alt="olive-tatiane-Im-Ez-F9-B91-Mk-unsplash-2"
-          />
-          <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
+
+          <div className="relative group flex justify-center items-center h-80 w-full bg-blue-600/30 backdrop-brightness-75 my-6">
+            <img
+              className="object-center object-cover h-full w-full"
+              src="https://i.ebayimg.com/images/g/jj0AAOSwlkNk3eH7/s-l1200.webp"
+              alt="girl-image"
+            />
+            <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
+            <Link to='/accessories' >
             Accessories
-          </button>
-          <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+            </Link>
+            </button>
+            <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+          </div>
+
+          <div className="relative group flex justify-center items-center h-80 w-full bg-blue-600/30 backdrop-brightness-75 my-6">
+            <img
+              className="object-center object-cover h-full w-full"
+              src="https://images-na.ssl-images-amazon.com/images/I/71p9FLhJlEL._AC_UL330_SR330,330_.jpg"
+              alt="girl-image"
+            />
+            <button className="dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 bottom-4 z-10 absolute text-base font-medium leading-none text-gray-800 py-3 w-36 bg-white">
+            <Link to='/seafety' >
+            Seafety
+            </Link>
+            </button>
+            
+            <div className="absolute opacity-0 group-hover:opacity-100 transition duration-500 bottom-3 py-6 z-0 px-20 w-36 bg-white bg-opacity-50" />
+          </div>
+         
+         
+       
+         
+          
         </div>
+      
       </div>
     </div>
   </div>
+  
 </>
 
     </div>
